@@ -1,0 +1,77 @@
+header{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+header>*{
+  flex-grow: 1
+}
+nav.sign{
+  text-align: right;
+}
+.article{
+  display: flex;
+  flex-direction: row;
+}
+.MenuNav{
+  width: 250px;
+  height: calc(100vh - 66.4px);
+  padding: 20px;
+}
+main{
+  width: 100%;
+  margin : 10px;
+}
+main>p{
+  margin : 0;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+.WrapContent{
+  display: flex;
+
+}
+.notice, .chat{
+  flex-grow: 1;
+  margin : 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.NoticeHeader, .ChatHeader{
+  background-color: #f1f1f1;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color : #c8c8c8;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.NoticeArticle, .ChatArticle{
+  padding: 20px;
+  background-color: white;
+}
+.NoticeHeader>p , .ChatHeader>p{
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.ChatFooter{
+  background-color: #f1f1f1;
+  border-top: 1px solid #c8c8c8;
+  padding: 10px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.chatview{
+  /*position: absolute;
+  bottom: 0px;*/
+  height:
+}
+header{
+  /*background-color: rgba(0,0,0,0);*/
+}
+body{
+  margin : 0;
+
+}
