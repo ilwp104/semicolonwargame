@@ -43,10 +43,6 @@ nav.sign{
   padding: 10px;
 
 }
-
-.wrapNavMenu p:hover{
-  background-color: #cccccc;
-}
 .wrapNavMenu div{
   display: flex;
   flex-direction: row;
@@ -58,84 +54,17 @@ nav.sign{
   padding: 10px;
   transition: 0.5s;
 }
-
-/*글쓰는 부분*/
-main{
-  width: 100%;
-  margin:  68px 20px 20px 310px;
+iframe{
+  margin-top: 65px;
+  margin-left: 291px;
+  padding: 0 15px 15px 15px;
+  height: calc(100vh - 80px);
 }
 main>p{
   font-size: 25px;
   margin : 0;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid silver;
-}
-.WrapContent{
-  display: flex;
-
-}
-.notice{
-  width : calc(100% - 350px);
-}
-.login{
-  width : 350px;
-}
-.notice, .login{
-  margin : 10px;
-  border: 1px solid #c8c8c8;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  height: 550px;
-}
-
-.NoticeHeader, .loginHeader{
-  background-color: #f1f1f1;
-  height: 45px;
-  text-align: center;
-  border-bottom: 1px solid;
-  border-color : #c8c8c8;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  display: flex;
-  flex-direction: row;
-}
-.NoticeHeader>p{
-  flex-grow: 1;
-  margin : 0;
-  padding: 10px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-.loginHeader>p{
-  flex-grow: 1;
-  margin : 0;
-  padding: 10px;
-  transition: .5s;
-}
-.loginHeader>p:nth-child(1){
-  border-top-left-radius: 6px;
-  background-color: #f1f1f1;
-}
-.loginHeader>p:nth-child(2){
-  border-top-right-radius: 6px;
-}
-.NoticeArticle, .loginArticle, .signupArticle{
-  padding: 20px;
-  background-color: white;
-  height: 100%;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-.loginArticle div, .signupArticle div{
-    width: 100%;
-}
-.loginArticle form, .signupArticle form{
-  display: flex;
-  flex-direction: column;
-}
-.signupArticle{
-  display : none;
 }
 header{
   /*background-color: rgba(0,0,0,0);*/

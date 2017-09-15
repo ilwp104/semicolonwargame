@@ -13,116 +13,56 @@
   </head>
   <body>
     <script type="text/javascript">
-    $(function (){
-      $(".loginHeader p:nth-child(1)").css("background-color","#c8c8c8");
-    });
-      function changelogin(){
-          $(".loginArticle").css("display","block");
-          $(".signupArticle").css("display","none");
-          $(".loginHeader p:nth-child(1)").css("background-color","#c8c8c8");
-          $(".loginHeader p:nth-child(2)").css("background-color","#f1f1f1");
-      }
-      function changesignup(){
-          $(".loginArticle").css("display","none");
-          $(".signupArticle").css("display","block");
-          $(".loginHeader p:nth-child(1)").css("background-color","#f1f1f1");
-          $(".loginHeader p:nth-child(2)").css("background-color","#c8c8c8");
+      function ChangeIframe(change) {
+        if (change == "main") {
+          $("#mainIframe").attr("src","./main.php");
+          $(".main").css("background-color","#c8c8c8");
+          $(".problem").css("background-color","#f8f8f8");
+          $(".auth").css("background-color","#f8f8f8");
+          $(".rank").css("background-color","#f8f8f8");
+        }
+        else if (change == "problem") {
+          $("#mainIframe").attr("src","./problem.php");
+          $(".main").css("background-color","#f8f8f8");
+          $(".problem").css("background-color","#c8c8c8");
+          $(".auth").css("background-color","#f8f8f8");
+          $(".rank").css("background-color","#f8f8f8");
+        }
+        else if (change == "auth"){
+          $("#mainIframe").attr("src","./auth.php");
+          $(".main").css("background-color","#f8f8f8");
+          $(".problem").css("background-color","#f8f8f8");
+          $(".auth").css("background-color","#c8c8c8");
+          $(".rank").css("background-color","#f8f8f8");
+        }
+        else if (change == "rank"){
+          $("#mainIframe").attr("src","./rank.php");
+          $(".main").css("background-color","#f8f8f8");
+          $(".problem").css("background-color","#f8f8f8");
+          $(".auth").css("background-color","#f8f8f8");
+          $(".rank").css("background-color","#c8c8c8");
+        }
       }
     </script>
+    <header>
+      <p style="font-size : 20px; margin : 0">Semicolon Wargame Site</p>
+    </header>
 
-      <header>
-        <p style="font-size : 20px; margin : 0">Semecolon Wargame Site</p>
-      </header>
-
-      <article class="article">
-        <nav class="MenuNav">
-          <div class="Nav_icon">
-            <img src="./img/semicolon_logo.png" class="semiicon" alt="세미 로고">
-          </div>
-          <div class="wrapNavMenu">
-            <p class="" onclick="location.href='index.php';">Main</p>
-            <p class="" onclick="location.href='problem.php';">Problem</p>
-            <p class="" onclick="location.href='flag.php';">Flag</p>
-            <p class="" onclick="location.href='http://semi2012.godohosting.com/';">Semicolon Page</p>
-          </div>
-        </nav>
-
-      <main>
-        <p>Welcome to Semecolon Wargame Site</p>
-        <div class="WrapContent">
-          <div class="notice">
-            <div class="NoticeHeader">
-              <p>Notice</p>
-            </div>
-            <div class="NoticeArticle">
-              <?php
-              //DB chat 내용 넣기
-              echo "<p></p>";
-              ?>
-            </div>
-          </div>
-
-          <div class="login">
-            <div class="loginHeader">
-              <p onclick="changelogin();">Login</p>
-              <p onclick="changesignup();">SignUp</p>
-            </div>
-
-            <div class="loginArticle">
-              <form class="loginform" action="login.php" method="post">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                 <input class="mdl-textfield__input" name="id" type="text" id="sample3">
-                 <label class="mdl-textfield__label" for="sample3">Id</label>
-               </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="password" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">Password</label>
-                </div>
-
-                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" value="Login">
-              </form>
-            </div>
-
-            <div class="signupArticle">
-              <form class="signupform" action="signup.php" method="post">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="nickname" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">닉네임</label>
-                </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                 <input class="mdl-textfield__input" name="id" type="text" id="sample3">
-                 <label class="mdl-textfield__label" for="sample3">아이디</label>
-                </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="password" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">비밀번호</label>
-                </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="name" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">이름</label>
-                </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="phonenum" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">전화번호</label>
-                </div>
-
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                  <input class="mdl-textfield__input" name="shool" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">소속학교</label>
-                </div>
-
-                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" value="Signup">
-              </form>
-            </div>
-
-          </div>
+    <article class="article">
+      <nav class="MenuNav">
+        <div class="Nav_icon">
+          <img src="./img/semicolon_logo.png" class="semiicon" alt="세미 로고">
         </div>
-      </main>
+        <div class="wrapNavMenu">
+          <p class="main" onclick="ChangeIframe('main')">Main</p>
+          <p class="problem" onclick="ChangeIframe('problem')">Problem</p>
+          <p class="auth" onclick="ChangeIframe('auth')">Auth</p>
+          <p class="rank" onclick="ChangeIframe('rank')">Rank</p>
+          <p class="homepage" onclick="location.href='http://semi2012.godohosting.com/';">Semicolon Page</p>
+        </div>
+      </nav>
+
+      <iframe id="mainIframe" src="./main.php"></iframe>
     </article>
   </body>
 </html>
