@@ -1,11 +1,17 @@
 header{
+  width: calc(100% - 40px);
   padding: 20px;
   display: flex;
   flex-direction: row;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid silver;
+  position: fixed;
+  z-index: 1;
 }
 header>*{
   flex-grow: 1
 }
+/*메뉴부분*/
 nav.sign{
   text-align: right;
 }
@@ -14,15 +20,52 @@ nav.sign{
   flex-direction: row;
 }
 .MenuNav{
+  margin-top:  65px;
   width: 250px;
   height: calc(100vh - 66.4px);
   padding: 20px;
+  background-color: #f8f8f8;
+  border-right: 1px solid silver;
+  position: fixed;
+
 }
+.Nav_icon{
+  text-align : center;
+  padding: 30px 0 30px 0;
+}
+.semiicon{
+  width: 170px;
+}
+
+.wrapNavMenu p{
+  transition: 0.5s;
+  margin : 0;
+  padding: 10px;
+
+}
+
+.wrapNavMenu p:hover{
+  background-color: #cccccc;
+}
+.wrapNavMenu div{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.wrapNavMenu div p{
+  flex-grow: 1;
+  margin : 0;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+/*글쓰는 부분*/
 main{
   width: 100%;
-  margin : 10px;
+  margin:  68px 20px 20px 310px;
 }
 main>p{
+  font-size: 25px;
   margin : 0;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid silver;
@@ -31,42 +74,68 @@ main>p{
   display: flex;
 
 }
-.notice, .chat{
-  flex-grow: 1;
+.notice{
+  width : calc(100% - 350px);
+}
+.login{
+  width : 350px;
+}
+.notice, .login{
   margin : 10px;
   border: 1px solid #c8c8c8;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  height: 550px;
 }
-.NoticeHeader, .ChatHeader{
+
+.NoticeHeader, .loginHeader{
   background-color: #f1f1f1;
+  height: 45px;
   text-align: center;
   border-bottom: 1px solid;
   border-color : #c8c8c8;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  display: flex;
+  flex-direction: row;
 }
-
-.NoticeArticle, .ChatArticle{
+.NoticeHeader>p{
+  flex-grow: 1;
+  margin : 0;
+  padding: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.loginHeader>p{
+  flex-grow: 1;
+  margin : 0;
+  padding: 10px;
+  transition: .5s;
+}
+.loginHeader>p:nth-child(1){
+  border-top-left-radius: 6px;
+  background-color: #f1f1f1;
+}
+.loginHeader>p:nth-child(2){
+  border-top-right-radius: 6px;
+}
+.NoticeArticle, .loginArticle, .signupArticle{
   padding: 20px;
   background-color: white;
-}
-.NoticeHeader>p , .ChatHeader>p{
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-}
-.ChatFooter{
-  background-color: #f1f1f1;
-  border-top: 1px solid #c8c8c8;
-  padding: 10px;
+  height: 100%;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-.chatview{
-  /*position: absolute;
-  bottom: 0px;*/
-  height:
+.loginArticle div, .signupArticle div{
+    width: 100%;
+}
+.loginArticle form, .signupArticle form{
+  display: flex;
+  flex-direction: column;
+}
+.signupArticle{
+  display : none;
 }
 header{
   /*background-color: rgba(0,0,0,0);*/
