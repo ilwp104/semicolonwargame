@@ -77,7 +77,7 @@
           <p class="problem" onclick="ChangeIframe('problem')">Problem</p>
           <p class="auth" onclick="ChangeIframe('auth')">Auth</p>
           <p class="rank" onclick="ChangeIframe('rank')">Rank</p>
-          <p class="homepage" onclick="location.href='http://semi2012.godohosting.com/';">Semicolon Page</p>
+          <p class="homepage" onclick="location.href='http://hanseimicolon.com/';">Semicolon Page</p>
         </div>
       </nav>
 
