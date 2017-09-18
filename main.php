@@ -60,7 +60,7 @@
           </div>
 
           <div class="loginArticle">
-            <form class="loginform" action="login.php" method="post">
+            <form class="loginform" action="./DB/login.php" method="post">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                <input class="mdl-textfield__input" name="id" type="text" id="sample3">
                <label class="mdl-textfield__label" for="sample3">Id</label>
@@ -76,35 +76,35 @@
           </div>
 
           <div class="signupArticle">
-            <form class="signupform" action="signup.php" method="post">
+            <form class="signupform" action="./DB/signup.php" method="post">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" name="nickname" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">닉네임</label>
+                <input class="mdl-textfield__input" name="nickname" type="text" id="nickname">
+                <label class="mdl-textfield__label" for="nickname">닉네임</label>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-               <input class="mdl-textfield__input" name="id" type="text" id="sample3">
-               <label class="mdl-textfield__label" for="sample3">아이디</label>
+               <input class="mdl-textfield__input" name="id" type="text" id="id">
+               <label class="mdl-textfield__label" for="id">아이디</label>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" name="password" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">비밀번호</label>
+                <input class="mdl-textfield__input" name="password" type="password" id="password">
+                <label class="mdl-textfield__label" for="password">비밀번호</label>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" name="name" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">이름</label>
+                <input class="mdl-textfield__input" name="name" type="text" id="name">
+                <label class="mdl-textfield__label" for="name">이름</label>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" name="phonenum" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">전화번호</label>
+                <input class="mdl-textfield__input" name="phonenum" type="text" id="phonenum">
+                <label class="mdl-textfield__label" for="phonenum">전화번호</label>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" name="shool" type="text" id="sample3">
-                <label class="mdl-textfield__label" for="sample3">소속학교</label>
+                <input class="mdl-textfield__input" name="shool" type="text" id="shool">
+                <label class="mdl-textfield__label" for="shool">소속학교</label>
               </div>
 
               <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" value="Signup">
